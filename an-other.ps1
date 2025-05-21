@@ -64,16 +64,16 @@ $table
 
                         foreach ($kw in $sensitiveKeywords) {
                             if ($line -match $kw) {
-                                Write-Host "[ALERT] Match in $table: $line"
+                                Write-Host "[ALERT] Match in ${table}: $line"
                             }
                         }
 
                         if ($line -match 'ey[A-Za-z0-9_-]{10,}') {
-                            Write-Host "[TOKEN DETECTED] $line"
+                            Write-Host "[TOKEN DETECTED] ${line}"
                         }
 
                         if ($line -match '[A-Za-z0-9+/]{30,}={0,2}') {
-                            Write-Host "[Base64 DETECTED] $line"
+                            Write-Host "[Base64 DETECTED] ${line}"
                         }
                     }
 
