@@ -1,5 +1,6 @@
 # Azure-Get-Sensitive-Log-Data
 Script to parse azure log files for potentially sensitive data that could be exposed to threat actors if sufficient access is gained to Azure. 
+Strictly alpha right now
 
 # Functionality
 Scans 500 recent sign-in and audit logs for patterns like:
